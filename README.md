@@ -1,8 +1,21 @@
-### Installation
+# Backend Project
+
+A robust Nodejs-Express backend solution inspired by Laravel 10 architecture.
+
+[![Star This Project](https://img.shields.io/github/stars/developer006tz/NodejsStartUpTemplate.svg?style=social)](https://github.com/developer006tz/NodejsStartUpTemplate.git)
+
+## Table of Contents
+- [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
 
 1. **Clone the Repository:**
    ```sh
-   git clone git@github.com:PrincessKikary/Backend.git
+   git clone https://github.com/developer006tz/NodejsStartUpTemplate.git
    cd Backend
    ```
 
@@ -42,19 +55,52 @@
    ```sh
    npm run dev
    ```
-   
-7. **Api route:**
-```sh
-Base: http://localhost:3033/api
-Login: http://localhost:3033/api/auth/login
-Register: http://localhost:3033/api/auth/register
-AuthUser: Login: http://localhost:3033/api/authenticated/user
-   ```
 
-8. **Technology Used:**
-```sh
-Nodejs ^18
-Express ^4.16.1
-Mysql database,
-Sequelize ORM
+## Project Structure
 
+Our project structure is inspired by Laravel 10, providing a clean and organized codebase:
+
+```
+├── ProjectFolder/
+│   ├── controllers/
+│   ├── database/
+│   │   ├── config/
+│   │   ├── migrations/
+│   │   └── seeders/
+│   ├── middleware/
+│   │   └── validators/
+│   ├── node_modules/
+│   ├── routes/
+│   ├── services/
+│   ├── utils/
+│   ├── views/
+│   ├── .gitignore
+│   ├── .sequelizerc
+│   ├── app.js
+│   ├── package.json
+│   └── server.js
+```
+
+- `controllers/`: Handle incoming requests and return responses
+- `database/`: Contains database-related files (migrations, seeders, and configuration)
+- `middleware/`: Custom middleware functions
+- `routes/`: Define API routes
+- `services/`: Business logic and data processing
+- `utils/`: Utility functions and helpers
+- `views/`: Template files (if applicable)
+
+## Usage
+
+[Provide instructions on how to use your backend, API endpoints, etc.]
+
+## Contributing
+
+We welcome contributions! Please feel free to submit a Pull Request.
+
+## License
+
+[Specify your license here]
+
+---
+
+Don't forget to give this project a star ⭐️ if you find it helpful!
