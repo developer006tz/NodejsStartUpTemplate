@@ -1,15 +1,22 @@
 # Backend Project
 
-A robust Nodejs-Express backend solution inspired by Laravel 10 architecture.
+A robust Node.js-Express backend solution inspired by Laravel 10 architecture, featuring a full-featured authentication system using JWT tokens.
 
 [![Star This Project](https://img.shields.io/github/stars/developer006tz/NodejsStartUpTemplate.svg?style=social)](https://github.com/developer006tz/NodejsStartUpTemplate.git)
 
 ## Table of Contents
+- [Features](#features)
 - [Installation](#installation)
 - [Project Structure](#project-structure)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Features
+
+- Full-featured authentication system using JWT tokens
+- Protected API routes (except those with `/auth` prefix)
+- Laravel 10 inspired architecture
 
 ## Installation
 
@@ -56,6 +63,14 @@ A robust Nodejs-Express backend solution inspired by Laravel 10 architecture.
    npm run dev
    ```
 
+7. **Initial Routes:**
+   ```
+   Base URL: http://localhost:3033/api
+   Login: http://localhost:3033/api/auth/login
+   Register: http://localhost:3033/api/auth/register
+   Authenticated User: http://localhost:3033/api/authenticated/user
+   ```
+
 ## Project Structure
 
 Our project structure is inspired by Laravel 10, providing a clean and organized codebase:
@@ -91,7 +106,15 @@ Our project structure is inspired by Laravel 10, providing a clean and organized
 
 ## Usage
 
-[Provide instructions on how to use your backend, API endpoints, etc.]
+The API provides the following main routes:
+
+- `/api/auth/login`: User login
+- `/api/auth/register`: User registration
+- `/api/auth/forget-password`: Password reset functionality
+
+All other routes are protected and require authentication. To access protected routes, include the JWT token in the Authorization header of your requests.
+
+For detailed API documentation, please refer to [API Documentation](link-to-your-api-docs).
 
 ## Contributing
 
